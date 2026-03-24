@@ -71,7 +71,7 @@ This structure allowed me to work with transaction-level data and apply a report
 
 ## Dashboard Preview
 
-![Dashboard Overview](Images/Dashboard-Overview.png)
+![Dashboard Overview](Images/Dashboard_Overview.png)
 
 ![ERD](Images/ERD_pizza_sales.png)
 
