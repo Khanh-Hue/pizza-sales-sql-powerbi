@@ -1,71 +1,45 @@
 # Pizza Sales Analysis | SQL + Power BI
 
-A portfolio project showcasing how transactional sales data can be transformed into clear business insights using **SQL** and **Power BI**.
+An end-to-end analytics project transforming transactional sales data into actionable business insights using SQL and Power BI.
 
-This project analyses pizza shop sales performance across revenue, order behaviour, product mix, and peak trading periods, with a focus on turning raw data into decision-ready reporting.
+This project analyses 21K+ orders and $817K+ revenue, focusing on product performance, customer ordering behaviour, and peak trading patterns to support data-driven decision-making.
 
 ---
 
 ## Project Summary
 
-Using a relational dataset of orders, order details, pizzas, and pizza types, I built an end-to-end analytics workflow to:
+This project simulates a real-world Business Intelligence workflow:
 
-- structure and analyse sales data with SQL
-- calculate core commercial KPIs
-- identify top-performing products and categories
-- examine sales patterns by hour, day, and pizza size
-- present findings through an executive-style Power BI dashboard
+- Structuring and modelling relational data  
+- Analysing sales performance using SQL  
+- Developing key business metrics (KPIs)  
+- Delivering insights through an executive Power BI dashboard  
 
-This project reflects the workflow expected in **Data Analyst**, **BI Analyst**, and **Reporting Analyst** roles, where technical analysis must lead to practical business insight.
-
----
-
-- GitHub
-
-**Skills Demonstrated**
-- relational data modelling
-- SQL joins and aggregations
-- KPI development
-- sales and product performance analysis
-- dashboard design
-- data storytelling for stakeholders
+The focus is not only on building visuals, but on demonstrating the ability to connect data, business questions, and decision-making.
 
 ---
 
 ## Dataset
 
-The analysis uses 4 related tables:
+The dataset consists of four relational tables:
 
-- **orders**
-- **order_details**
-- **pizzas**
-- **pizza_types**
+- **orders** – order-level data (date, time, weekday)  
+- **order_details** – transaction-level sales records  
+- **pizzas** – product and pricing information  
+- **pizza_types** – category and product descriptions  
 
-This structure allowed me to work with transaction-level data and apply a reporting approach similar to real business environments.
-
----
-
-## Key Metrics
-
-- **Total Revenue:** $817,860.05
-- **Total Orders:** 21,350
-- **Total Pizzas Sold:** 49,574
-- **Average Order Value:** $38.31
-- **Average Pizzas per Order:** 2.32
+This structure reflects a **fact + dimension model**, commonly used in business reporting environments.
 
 ---
 
-## Key Insights
+## Business Questions
 
-- **Classic** pizzas generated the highest revenue
-- **Large** pizzas were the strongest-performing size
-- **Friday** was the busiest sales day
-- Sales peaked around **12 PM, 1 PM, and 6 PM**
-- Top revenue-driving products included:
-  - The Thai Chicken Pizza
-  - The Barbecue Chicken Pizza
-  - The California Chicken Pizza
-  - The Classic Deluxe Pizza
+This project addresses key business questions:
+
+- What is the total revenue and average order value?  
+- Which pizza categories and products drive revenue?  
+- When are peak sales hours and busiest days?   
+- Where are the opportunities to optimise sales performance?  
 
 ---
 
@@ -73,41 +47,45 @@ This structure allowed me to work with transaction-level data and apply a report
 
 ![Dashboard Overview](Images/Dashboard_Overview.png)
 
-![ERD](Images/ERD_pizza_sales.png)
+---
 
+## Key Insights from Dashboard
+
+- Sales activity peaks during **midday and early evening**, indicating strong lunch and dinner demand cycles  
+- The **Classic category** consistently generates the most revenue across all periods  
+- **Friday** shows the highest order volume, highlighting end-of-week demand spikes  
+- A small group of pizzas drives a significant share of revenue, indicating product concentration  
+
+These patterns highlight clear opportunities to optimise **staffing, promotions, and product focus** during peak trading periods.
+
+---
+
+## Data Model
+
+![Pizza Sales ERD](Images/ERD_pizza_sales.png)
 
 ---
 
 ## SQL Scope
 
-The SQL component of this project included:
+The SQL component of this project includes:
 
-- table structuring
-- dataset joins using business keys
-- KPI calculations
-- revenue and sales trend analysis
-- reusable reporting queries and views
-
----
-
-## Business Value
-
-This project demonstrates how data can support better business decisions by revealing:
-
-- which products drive revenue
-- when demand is highest
-- how category and size affect sales performance
-- where reporting can improve commercial visibility
+- table creation and data structuring  
+- joining datasets using business keys  
+- KPI calculations (revenue, order volume, AOV)  
+- sales trend analysis by category, time, and product  
+- reusable queries and views for reporting  
 
 ---
 
 ## Repository Structure
 
+
 ```bash
 pizza-sales-sql-powerbi/
 │
-├── data/
-├── sql/
-├── powerbi/
-├── images/
+├── Data/
+├── Sql/
+├── Powerbi/
+├── Images/
 └── README.md
