@@ -2,7 +2,7 @@
 
 An end-to-end analytics project transforming transactional sales data into actionable business insights using SQL and Power BI.
 
-This project analyses 21K+ orders and $817K+ revenue, focusing on product performance, customer ordering behaviour, and peak trading patterns to support data-driven decision-making.
+This project analyses 21,350 orders and $817,860 revenue, focusing on product performance, customer ordering behaviour, and peak trading patterns to support data-driven decision-making.
 
 ---
 
@@ -21,14 +21,12 @@ The focus is not only on building visuals, but on demonstrating the ability to c
 
 ## Dataset
 
-The dataset consists of four relational tables:
+This project contains four tables connected through primary key–foreign key relationships. Data is retrieved by joining fact and dimension tables.
 
 - **orders** – order-level data (date, time, weekday)  
 - **order_details** – transaction-level sales records  
 - **pizzas** – product and pricing information  
 - **pizza_types** – category and product descriptions  
-
-This structure reflects a **fact + dimension model**, commonly used in business reporting environments.
 
 ---
 
